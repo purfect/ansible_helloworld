@@ -5,7 +5,7 @@ pipeline {
                         steps {
                                         ansiblePlaybook(
                                                 installation: 'ansible-2.5.0',
-                                                playbook: 'main.yml',
+                                                playbook: 'playbook.yml',
                                                 colorized: true,
                                         )
                         }
