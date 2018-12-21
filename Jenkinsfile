@@ -8,6 +8,7 @@ pipeline {
                                                 playbook: 'playbook.yml',
                                                 colorized: true,
                                         )
+                                sh "ansible --version"
                         }
                 }
         }
