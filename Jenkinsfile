@@ -3,7 +3,6 @@ pipeline {
         stages {
                 stage('Ansible') {
                         steps {
-                                ansiColor('xterm') {
                                         ansiblePlaybook(
                                                 installation: 'ansible 2.4.3 (virtualenv)',
                                                 playbook: 'main.yml',
@@ -14,7 +13,6 @@ pipeline {
                                                 sudoUser: 'avtomat',
                                                 extras: '${dry_run}'
                                         )
-                                }
                         }
                 }
         }
