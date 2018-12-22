@@ -4,7 +4,7 @@ pipeline {
                 stage('Ansible') {
                         steps {
 				ansiblePlaybook(
-					installation: 'ansible-2.5',
+					installation: 'ansible_virtenv',
 					playbook: 'playbook.yml',
 					colorized: true,
 				)
